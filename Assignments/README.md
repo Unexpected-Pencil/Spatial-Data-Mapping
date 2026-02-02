@@ -2,7 +2,7 @@
 
 | Status | Course                 | Assignment                               | Due Date         | Points | Folder                                                                                              |
 | ------ | ---------------------- | ---------------------------------------- | ---------------- | ------ | --------------------------------------------------------------------------------------------------- |
-| 🟢     | 4543-5993-Spatial-Data | Development Environment & Workflow Setup | 2026-02-08 23:59 | 0      | [Assignments/Part_00](Assignments/Part_00)                                                          |
+| 🟢     | 4543-5993-Spatial-Data | Development Environment & Workflow Setup | 2026-02-08 23:59 | 0      | [Assignments/Part_00](Assignments/Part_00/)                                                         |
 | 🟢     | 4543-5993-Spatial-Data | 01-Working_with_Data_Basic               | 2026-02-15 23:59 | 0      | [Assignments/Part_01/01-Worki...](Assignments/Part_01/01-Working_with_Data_Basic/notebooks)         |
 | 🟢     | 4543-5993-Spatial-Data | 01-Working_with_Data_Basic Quiz          | 2026-02-15 23:59 | 0      | [Assignments/Part_01/01-Worki...](Assignments/Part_01/01-Working_with_Data_Basic)                   |
 | 🟢     | 4543-5993-Spatial-Data | 02-Scalar_Types_and_Control_Flow         | 2026-02-15 23:59 | 0      | [Assignments/Part_01/02-Scala...](Assignments/Part_01/02-Scalar_Types_and_Control_Flow/notebooks)   |
