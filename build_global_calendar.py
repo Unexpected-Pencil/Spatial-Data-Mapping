@@ -64,7 +64,7 @@ def render_markdown(assignments):
         status = "🔴 LATE" if is_late else "🟢"
 
         due_str = a["due"].strftime("%Y-%m-%d %H:%M")
-        folder_link = f"[{truncate_string(a['path'])}]({a['path']})"
+        folder_link = f"[{truncate_string(a['path'])}]({a['path']}/README.md)"
 
         title = f"**{a['title']}**" if is_late else a["title"]
 
