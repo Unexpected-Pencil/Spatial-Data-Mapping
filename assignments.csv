@@ -1,0 +1,9 @@
+course,title,type,due,points,path
+02-Spatial_Data_Core,Hello Json meet GeoJson,assignment,2026-02-08T23:59,100,Assignments/02-Spatial_Data_Core/01-Hello_Json_Meet_GeoJson
+02-Spatial_Data_Core,Raw Spatial Data,project,2026-02-08T23:59,0,Assignments/02-Spatial_Data_Core/02-Raw_Spatial_Data
+02-Spatial_Data_Core,02A — When Coordinates Aren’t Enough,conceptual + coding,2026-03-01T23:59,0,Assignments/02-Spatial_Data_Core/02-Raw_Spatial_Data/02A-When_Coordinates_Arent_Enough
+02-Spatial_Data_Core,02b — Distance Depends on Assumptions,conceptual + coding,2026-03-01T23:59,0,Assignments/02-Spatial_Data_Core/02-Raw_Spatial_Data/02B-Distance_Depends_on_Assumptions
+02-Spatial_Data_Core,Editing and Simplifying Spatial Data,lesson,2026-03-01T23:59,0,Assignments/02-Spatial_Data_Core/02-Raw_Spatial_Data/02C-Paths_And_Movement
+02-Spatial_Data_Core,Editing and Simplifying Spatial Data,lesson,2026-03-01T23:59,0,Assignments/02-Spatial_Data_Core/02-Raw_Spatial_Data/02D-Bounding_Reality
+02-Spatial_Data_Core,Spatial Failure Modes and Data Pitfalls,lesson,2026-03-01T23:59,0,Assignments/02-Spatial_Data_Core/02-Raw_Spatial_Data/02E-Spatial_Failure_Modes_and_Data_Pitfalls
+02-Spatial_Data_Core,Spatial Thinking Synthesis and Check,lesson,2026-03-01T23:59,0,Assignments/02-Spatial_Data_Core/02-Raw_Spatial_Data/02F-Spatial_Thinking_Synthesis_and_Check
