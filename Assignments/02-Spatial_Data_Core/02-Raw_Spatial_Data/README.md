@@ -2,7 +2,7 @@
 
 | Status | Type | Item | Due | Points |
 |--------|------|------|-----|--------|
-| 🟢 | project | [Raw Spatial Data](.) | 2026-02-08 23:59 | 0 |
+| 🔴 LATE | project | [**Raw Spatial Data**](.) | 2026-02-08 23:59 | 0 |
 | 🟢 | conceptual + coding | [02A — When Coordinates Aren’t Enough](02A-When_Coordinates_Arent_Enough) | 2026-03-01 23:59 | 0 |
 | 🟢 | conceptual + coding | [02b — Distance Depends on Assumptions](02B-Distance_Depends_on_Assumptions) | 2026-03-01 23:59 | 0 |
 | 🟢 | lesson | [Editing and Simplifying Spatial Data](02C-Paths_And_Movement) | 2026-03-01 23:59 | 0 |

@@ -37,7 +37,7 @@ By completing this lesson, you will be able to:
 
 This lesson focuses on **thinking**, not tools.
 
----
+---f
 
 ## What You’ll Do
 

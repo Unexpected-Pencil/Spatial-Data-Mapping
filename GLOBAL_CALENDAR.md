@@ -2,8 +2,8 @@
 
 | Status | Course | Type | Title | Due | Points | Folder |
 |--------|--------|------|-------|-----|--------|--------|
-| 🟢 | 02-Spatial_Data_Core | assignment | Hello Json meet GeoJson | 2026-02-08 23:59 | 100 | [Assignments/02-Spatial_Data_Core/01-H...](Assignments/02-Spatial_Data_Core/01-Hello_Json_Meet_GeoJson) |
-| 🟢 | 02-Spatial_Data_Core | project | Raw Spatial Data | 2026-02-08 23:59 | 0 | [Assignments/02-Spatial_Data_Core/02-R...](Assignments/02-Spatial_Data_Core/02-Raw_Spatial_Data) |
+| 🔴 LATE | 02-Spatial_Data_Core | assignment | **Hello Json meet GeoJson** | 2026-02-08 23:59 | 100 | [Assignments/02-Spatial_Data_Core/01-H...](Assignments/02-Spatial_Data_Core/01-Hello_Json_Meet_GeoJson) |
+| 🔴 LATE | 02-Spatial_Data_Core | project | **Raw Spatial Data** | 2026-02-08 23:59 | 0 | [Assignments/02-Spatial_Data_Core/02-R...](Assignments/02-Spatial_Data_Core/02-Raw_Spatial_Data) |
 | 🟢 | 02-Spatial_Data_Core | conceptual + coding | 02A — When Coordinates Aren’t Enough | 2026-03-01 23:59 | 0 | [Assignments/02-Spatial_Data_Core/02-R...](Assignments/02-Spatial_Data_Core/02-Raw_Spatial_Data/02A-When_Coordinates_Arent_Enough) |
 | 🟢 | 02-Spatial_Data_Core | conceptual + coding | 02b — Distance Depends on Assumptions | 2026-03-01 23:59 | 0 | [Assignments/02-Spatial_Data_Core/02-R...](Assignments/02-Spatial_Data_Core/02-Raw_Spatial_Data/02B-Distance_Depends_on_Assumptions) |
 | 🟢 | 02-Spatial_Data_Core | lesson | Editing and Simplifying Spatial Data | 2026-03-01 23:59 | 0 | [Assignments/02-Spatial_Data_Core/02-R...](Assignments/02-Spatial_Data_Core/02-Raw_Spatial_Data/02C-Paths_And_Movement) |
