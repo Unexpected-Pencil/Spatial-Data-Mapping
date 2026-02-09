@@ -1,0 +1,7 @@
+schema_version: 1
+title: Assessments
+type: assessment
+status: draft
+due: null
+points: null
+notebooks: []

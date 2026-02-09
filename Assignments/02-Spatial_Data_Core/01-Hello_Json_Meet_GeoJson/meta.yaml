@@ -1,0 +1,18 @@
+title: Hello Json meet GeoJson
+course: 4543-5993-Spatial-Data
+type: assignment
+due: 2026-02-08 23:59
+points: 100
+assignment_notebooks:
+  - 01-Validate_And_Inspect_GeoJSON.ipynb
+  - 02-Fix_Common_GeoJSON_Breaks.ipynb
+  - 03-Visualize_And_Explore.ipynb
+  - 04-Export_Reflect_Submit.ipynb
+rubric:
+  - item: Notebook correctness
+    points: 60
+  - item: Code style / clarity
+    points: 20
+  - item: Interpretation / write-up
+    points: 20
+created_from: auto

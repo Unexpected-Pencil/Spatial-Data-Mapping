@@ -1,0 +1,10 @@
+schema_version: 1
+title: 03-Visualize_And_Explore
+type: assignment
+status: draft
+due: null
+points: null
+notebooks:
+  - notebook.ipynb
+created_at: "2026-02-08T21:48:40-06:00"
+updated_at: "2026-02-08T21:48:40-06:00"
