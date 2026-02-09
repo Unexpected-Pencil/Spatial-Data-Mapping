@@ -17,7 +17,7 @@ help:
     @echo "Course Tools — Commands"
     @echo "----------------------"
     @echo "just all 02              Run full pipeline"
-    @echo "just all 02 1        Dry-run full pipeline"
+    @echo "just all 02 dry=1        Dry-run full pipeline"
     @echo ""
     @echo "Individual:"
     @echo "just scaffold 02"
@@ -42,6 +42,17 @@ scaffold section dry="0":
 meta section dry="0":
     cd "{{repo}}"
     python -m tools.course_tools.generate_meta --root . --section {{section}} --refresh {{ if dry == "1" { "--dry-run" } else { "" } }}
+
+meta-print section assignment:
+    python -m tools.course_tools.generate_meta \
+        --root . \
+        --section {{section}} \
+        --assignment {{assignment}} \
+        --print
+
+meta-one section assignment:
+    cd "{{repo}}"
+    python -m tools.course_tools.generate_meta --root . --section {{section}} --assignment {{assignment}} --print
 
 csv section:
     cd "{{repo}}"

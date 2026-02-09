@@ -1,25 +1,108 @@
-# Glossary — Editing & Simplifying Spatial Data
+# Overview — Editing & Simplifying Spatial Data
 
-**Editing**  
-The intentional modification of spatial data to improve clarity or usefulness.
+Spatial data is never a perfect mirror of reality.
 
-**Simplification**  
-Reducing detail while preserving overall structure or meaning.
+Every spatial dataset is an **edited version of the world** — simplified, filtered,
+generalized, or emphasized for a purpose.
 
-**Generalization**  
-Representing complex shapes or features in a simplified form.
+This lesson focuses on _intentional editing_ and the consequences of those choices.
 
-**Abstraction**  
-A reduced representation that highlights selected characteristics.
+---
 
-**Vertex**  
-A point where line segments meet in a geometry.
+## Why Editing Matters
 
-**Detail Loss**  
-Information removed during simplification.
+Editing spatial data:
 
-**Intentional Edit**  
-A change made with awareness of its consequences.
+- changes what is visible
+- removes or exaggerates detail
+- alters interpretation
+- embeds assumptions
 
-**Misleading Simplification**  
-A simplification that distorts interpretation or meaning.
+These changes are not inherently wrong — but they must be **intentional and understood**.
+
+---
+
+## Simplification Is Not Neutral
+
+When you:
+
+- remove points
+- smooth lines
+- shrink or expand boundaries
+- generalize shapes
+
+you are making decisions about what _matters_ and what does not.
+
+Those decisions affect meaning.
+
+---
+
+## Editing vs Manipulation
+
+Editing becomes manipulation when:
+
+- intent is hidden
+- assumptions are not stated
+- simplification misleads
+
+This lesson prepares students to recognize the difference.
+
+---
+
+## Key Takeaway
+
+> **Every edit is an argument about reality.**
+# Overview — Editing & Simplifying Spatial Data
+
+Spatial data is never a perfect mirror of reality.
+
+Every spatial dataset is an **edited version of the world** — simplified, filtered,
+generalized, or emphasized for a purpose.
+
+This lesson focuses on _intentional editing_ and the consequences of those choices.
+
+---
+
+## Why Editing Matters
+
+Editing spatial data:
+
+- changes what is visible
+- removes or exaggerates detail
+- alters interpretation
+- embeds assumptions
+
+These changes are not inherently wrong — but they must be **intentional and understood**.
+
+---
+
+## Simplification Is Not Neutral
+
+When you:
+
+- remove points
+- smooth lines
+- shrink or expand boundaries
+- generalize shapes
+
+you are making decisions about what _matters_ and what does not.
+
+Those decisions affect meaning.
+
+---
+
+## Editing vs Manipulation
+
+Editing becomes manipulation when:
+
+- intent is hidden
+- assumptions are not stated
+- simplification misleads
+
+This lesson prepares students to recognize the difference.
+
+---
+
+## Key Takeaway
+
+> **Every edit is an argument about reality.**
