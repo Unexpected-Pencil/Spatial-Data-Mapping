@@ -8,7 +8,7 @@ From Dr. Griffin:
 <sub>_Having said that, I'm taking over from automated content generation, and going back to my own gray matter. Delivery to ya'll will be different. Slack updates, and assignment posts on github for now._</sub>
 
 
-<sub>_Lastly, don't freak out when you read the project. I will still provide starter code, explanations, examples, and zoom with anyone who needs help. And the early milestones are pretty straight forward (with a little help)._</sub>
+<sub>_Lastly, don't freak out when you read the project. I will still provide starter code, explanations, examples, and zoom with anyone who needs help. The early milestones are pretty straight forward (with a little help), and the project as a whole (when done in steps) is also easier than it may look._</sub>
 
 
 # 🚀 Project 01: Missile Geometry 101  
