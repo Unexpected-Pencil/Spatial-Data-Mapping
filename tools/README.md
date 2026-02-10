@@ -11,7 +11,7 @@ includes:
 tone: "supportive with light roast"
 ```
 
-Totally fine, Terry. You’re not “needy.” You’re just… **feature-rich**. Like an enterprise Java app from 2009. 😄
+This is a **feature-rich** app. Like an enterprise Java app from 2009. 😄
 
 Here’s a **drop-in `README.md`** for `tools/course_tools/README.md` that:
 - encodes the Constitution (wallet version)
