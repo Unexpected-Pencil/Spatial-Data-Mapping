@@ -57,17 +57,14 @@ def haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     Inputs: degrees
     Output: kilometers
     """
-    phi1 = math.radians(lat1)
-    phi2 = math.radians(lat2)
+    phi1 = radians(lat1)
+    phi2 = radians(lat2)
 
-    dphi = math.radians(lat2 - lat1)
-    dlmb = math.radians(lon2 - lon1)
+    dphi = radians(lat2 - lat1)
+    dlmb = radians(lon2 - lon1)
 
-    a = (
-        math.sin(dphi / 2) ** 2
-        + math.cos(phi1) * math.cos(phi2) * math.sin(dlmb / 2) ** 2
-    )
-    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+    a = sin(dphi / 2) ** 2 + cos(phi1) * cos(phi2) * sin(dlmb / 2) ** 2
+    c = 2 * atan2(sqrt(a), sqrt(1 - a))
 
     return EARTH_RADIUS_KM * c
 
