@@ -1,3 +1,7 @@
+"""
+Hackish script to add more properties per country to our countries.geojson file.
+"""
+
 import json
 import glob
 
