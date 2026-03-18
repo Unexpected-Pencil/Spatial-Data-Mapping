@@ -1,32 +1,32 @@
-| #   | File                                         | Description |
-| --- | -------------------------------------------- | ----------- |
-| 1   | [00_Paths](00_Paths)                         | -           |
-| 2   | [01_JSON_GeoJSON](01_JSON_GeoJSON)           | -           |
-| 3   | [02_Viewing_GeoJSON](02_Viewing_GeoJSON)     | -           |
-| 4   | [03_Styling_Filtering](03_Styling_Filtering) | -           |
-| 5   | [04_Bounding_Box](04_Bounding_Box)           | -           |
-| 6   | [05_Interactive_Maps](05_Interactive_Maps)   | -           |
-| 7   | [06_Point_In_Polygon](06_Point_In_Polygon)   | -           |
-| 8   | [07_Distance](07_Distance)                   | -           |
-| 9   | [08_Bearing](08_Bearing)                     | -           |
-| 10  | [09_Lines](09_Lines)                         | -           |
-| 11  | [10_Intersections](10_Intersections)         | -           |
-| 12  | [11_Buffers](11_Buffers)                     | -           |
-| 13  | [12_WDO_Library](12_WDO_Library)             | -           |
-| 14  | [13_Refactoring](13_Refactoring)             | -           |
-| 15  | [README.md](README.md)                       | -           |
+# Missile Geometry 202 — Micro Lesson Roadmap
 
-# Missile Geometry 101 — Micro Lesson Roadmap
-
-These micro lessons are designed to build the skills needed for the **Missile Geometry 101/202** project one concept at a time. Each lesson introduces a small, focused idea. The final project is where those ideas are combined.
+These micro lessons are designed to build the skills needed for the **Missile Geometry 202** project one concept at a time. Each lesson introduces a small, focused idea. The final project is where those ideas are combined.
 
 The general progression is:
 
 ```text
-Paths → JSON/GeoJSON → Viewing Maps → Styling → Extent → Clicks
-→ Point in Polygon → Distance → Bearing → Lines → Intersections
-→ Buffers → Reusable Helpers / WDO
+Paths → JSON/GeoJSON → Viewing Maps → Styling → Interactive Maps
+→ Coordinate Geometry → Distance → Bearing → Intercept & Pursuit
+→ Intersections → Buffers → Point in Polygon
+→ Refactoring → WDO Library
 ```
+
+| #   | Folder                                                                                   | Description                                               |
+| --- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| 00  | [00-Paths](00-Paths)                                                                     | File paths, working directories, and locating data files  |
+| 01  | [01-JSON_GeoJSON](01-JSON_GeoJSON)                                                       | Reading JSON and GeoJSON; FeatureCollection structure     |
+| 02  | [02-Viewing_GeoJSON](02-Viewing_GeoJSON)                                                 | Displaying GeoJSON on interactive maps                    |
+| 03  | [03-Attributes_Styling_Filtering](03-Attributes_Styling_Filtering)                       | Feature properties, dynamic styling, and filtering        |
+| 04  | [04-Interactive_Maps](04-Interactive_Maps)                                               | Map events, clicks, dynamic layers, and output widgets    |
+| 05  | [05-Coordinate_Geometry](05-Coordinate_Geometry)                                         | Coordinate ranges, bounding boxes, and lat/lon geometry   |
+| 06  | [06-Distance](06-Distance)                                                               | Euclidean vs haversine distance; applications and batching|
+| 07  | [07-Bearing](07-Bearing)                                                                 | Computing bearing, bearing drift, and navigation logic    |
+| 08  | [08-Intercept_Pursuit_Module_Design](08-Intercept_Persuit_Module_Design)                 | Intercept geometry, pursuit curves, and simulations       |
+| 09  | [09-Intersections](09-Intersections)                                                     | Line-segment and path-vs-polygon intersection detection   |
+| 10  | [10-Buffers](10-Buffers)                                                                 | Point and line buffers, impact zones, CRS limitations     |
+| 11  | [11-Point_In_Polygon](11-Point_In_Polygon)                                               | Ray-casting algorithm, click-to-region classification     |
+| 12  | [12-Refactoring](12-Refactoring)                                                         | Refactoring notebook code into reusable helper functions  |
+| 13  | [13-WDO_Library](13-WDO_Library)                                                         | Installing and importing the `wdo` project library        |
 
 ---
 
@@ -40,8 +40,8 @@ Learn how to locate files reliably before doing any spatial work.
 
 - checking the current working directory
 - building paths with `pathlib`
-- verifying whether files exist
-- failing cleanly when files are missing
+- reading files relative to the notebook location
+- finding the project root from any notebook
 
 ### Why this matters
 
@@ -57,7 +57,7 @@ Understand the structure of the data before trying to display it.
 
 ### Students will practice
 
-- reading JSON files
+- reading JSON files with Python's `json` module
 - identifying `FeatureCollection`, `Feature`, `properties`, and `geometry`
 - distinguishing regular JSON from GeoJSON
 - understanding that GeoJSON coordinates are stored as `[lon, lat]`
@@ -68,7 +68,7 @@ Students should know what they are holding in memory before trying to map or ana
 
 ---
 
-## 02 — Viewing GeoJSON with Folium
+## 02 — Viewing GeoJSON
 
 ### Goal
 
@@ -76,18 +76,18 @@ Load GeoJSON and display it on an interactive map.
 
 ### Students will practice
 
-- loading a GeoJSON file
-- adding it as a map layer in Folium
-- centering and zooming a map
-- seeing polygon features rendered visually
+- using geojson.io for quick visualization
+- creating maps with ipyleaflet
+- adding GeoJSON layers to a map
+- controlling basemaps, zoom, and layer settings
 
 ### Why this matters
 
-This is the first “reward” notebook: students see their data on a map.
+This is the first "reward" notebook: students see their data on a map.
 
 ---
 
-## 03 — Properties, Styling, and Filtering
+## 03 — Attributes, Styling, and Filtering
 
 ### Goal
 
@@ -96,15 +96,9 @@ Use feature data to control how things look and what gets displayed.
 ### Students will practice
 
 - reading `feature["properties"]`
-- styling features dynamically
+- styling features dynamically with `style_callback`
 - coloring based on attribute values
 - filtering features before display
-
-### Example tasks
-
-- countries A–M one color, N–Z another
-- show only countries above a population threshold
-- show only countries in one hemisphere
 
 ### Why this matters
 
@@ -112,38 +106,18 @@ Students learn that **data drives map output**.
 
 ---
 
-## 04 — Bounding Boxes and Spatial Extent
+## 04 — Interactive Maps
 
 ### Goal
 
-Understand the geographic extent of a dataset.
+Make maps respond to user input.
 
 ### Students will practice
 
-- computing min/max longitude and latitude
-- interpreting dataset bounds
-- drawing a rectangle for a bounding box
-- reinforcing coordinate order
-
-### Why this matters
-
-This is the first step from “displaying shapes” to “reasoning about space.”
-
----
-
-## 05 — Interactive Maps with ipyleaflet
-
-### Goal
-
-Capture user clicks and save point data from a map.
-
-### Students will practice
-
-- switching from Folium to ipyleaflet
-- using map click callbacks
-- dropping markers interactively
-- saving clicked coordinates to a file
-- clearing points with widgets
+- registering event handlers on ipyleaflet maps
+- handling click events and extracting coordinates
+- adding and removing GeoJSON layers dynamically
+- displaying results using ipywidgets Output
 
 ### Why this matters
 
@@ -151,31 +125,26 @@ Students move from viewing maps to **interacting** with maps.
 
 ---
 
-## 06 — Point in Polygon and Clicked Region Detection
+## 05 — Coordinate Geometry
 
 ### Goal
 
-Determine which polygon contains a clicked point.
+Understand the geometry of geographic coordinates before doing math with them.
 
 ### Students will practice
 
-- converting click coordinates into geometry-friendly format
-- looping through polygon features
-- testing whether a point lies inside a region
-- classifying a click by region name
-
-### Example tasks
-
-- determine which quadrant/region was clicked
-- later extend to which US state was clicked
+- working with valid longitude (−180 to 180) and latitude (−90 to 90) ranges
+- computing bounding boxes from point sets
+- drawing bounding boxes as GeoJSON polygons
+- understanding why lat/lon arithmetic differs from Cartesian math
 
 ### Why this matters
 
-This is the bridge between **click capture** and **spatial reasoning**.
+This is the first step from "displaying shapes" to "reasoning about space."
 
 ---
 
-## 07 — Haversine Distance
+## 06 — Distance
 
 ### Goal
 
@@ -183,10 +152,10 @@ Compute geographic distances between real locations.
 
 ### Students will practice
 
-- using latitude/longitude in formulas
-- computing distances between points
-- sorting locations by distance
-- displaying results on a map
+- computing naive Euclidean distance in degree space
+- applying the haversine formula for spherically-accurate great-circle distance
+- comparing both methods across latitudes
+- solving range, nearest-target, and coverage problems
 
 ### Why this matters
 
@@ -194,18 +163,18 @@ Distance is one of the core mathematical tools needed for the final project.
 
 ---
 
-## 08 — Bearings and Destination Points
+## 07 — Bearing
 
 ### Goal
 
-Compute a destination point from a start point, bearing, and distance.
+Compute compass direction as a measurable, usable quantity.
 
 ### Students will practice
 
-- working with bearings
-- converting between degrees and radians
-- computing a destination coordinate
-- plotting the result
+- understanding bearing as clockwise degrees from North
+- calculating bearing between two geographic points using `atan2`
+- understanding bearing drift along a great-circle path
+- applying bearing to sector filtering, direction arrows, and targeting
 
 ### Why this matters
 
@@ -213,25 +182,26 @@ Students isolate the directional math before using it in more complex trajectory
 
 ---
 
-## 09 — LineStrings and Trajectories
+## 08 — Intercept & Pursuit
 
 ### Goal
 
-Build line geometry explicitly from points.
+Model the geometry of one object chasing or intercepting another.
 
 ### Students will practice
 
-- creating `LineString` geometries
-- drawing start-to-end paths
-- visualizing simple trajectories
+- defining the intercept problem: pursuer, target, velocity
+- solving intercept time with binary search root-finding
+- simulating iterative pursuit curves step by step
+- building interactive click-to-place simulations
 
 ### Why this matters
 
-Students turn point computations into visible geometry.
+Students combine distance and bearing into a dynamic, time-dependent geometry problem.
 
 ---
 
-## 10 — Line and Polygon Intersections
+## 09 — Intersections
 
 ### Goal
 
@@ -239,17 +209,18 @@ Determine whether paths intersect polygon regions.
 
 ### Students will practice
 
-- testing line vs polygon relationships
-- identifying intersected countries or regions
-- highlighting intersected features
+- representing trajectories as GeoJSON LineStrings
+- detecting two-segment crossings using orientation and cross-product math
+- testing a path against a polygon by checking each edge pair
+- running paths against real country boundary data
 
 ### Why this matters
 
-This supports later reasoning about routes, paths, and impacted regions.
+This supports reasoning about routes, paths, and impacted regions.
 
 ---
 
-## 11 — Buffers and Zones
+## 10 — Buffers and Zones
 
 ### Goal
 
@@ -257,10 +228,10 @@ Create zones of influence around points or lines.
 
 ### Students will practice
 
-- buffering points by different distances
-- visualizing impact zones
-- comparing small and large buffers
-- discussing geographic CRS limitations
+- building accurate circular buffers in kilometers using the destination-point formula
+- creating line corridor buffers via sampled overlapping circles
+- comparing concentric zone rings and multi-target buffers
+- understanding why degree-offset buffers are geometrically incorrect
 
 ### Why this matters
 
@@ -268,7 +239,45 @@ Buffers introduce area-based reasoning and set up future damage-zone logic.
 
 ---
 
-## 12 — Installing and Using the WDO Library
+## 11 — Point in Polygon
+
+### Goal
+
+Determine which polygon contains a clicked point.
+
+### Students will practice
+
+- capturing ipyleaflet click events
+- understanding the `[lat, lon]` vs `[lon, lat]` coordinate flip
+- implementing the ray-casting algorithm from scratch
+- classifying a click by region name across a FeatureCollection
+
+### Why this matters
+
+This is the bridge between **click capture** and **spatial reasoning**.
+
+---
+
+## 12 — Refactoring Spatial Code
+
+### Goal
+
+Organize repeated notebook code into reusable functions and small helper classes.
+
+### Students will practice
+
+- identifying repeated code across notebooks
+- refactoring into helper functions
+- deciding when a small class is useful
+- separating map state from geometry logic
+
+### Why this matters
+
+Students move from "working notebook code" to **reusable project code**.
+
+---
+
+## 13 — Installing and Using the WDO Library
 
 ### Goal
 
@@ -287,79 +296,9 @@ At this point students have seen enough repeated geometry code that packaging he
 
 ---
 
-## 13 — Refactoring Spatial Code into Reusable Helpers
-
-### Goal
-
-Organize repeated notebook code into reusable functions and small helper classes.
-
-### Students will practice
-
-- identifying repeated code
-- refactoring into helper functions
-- deciding when a small class is useful
-- separating map state from geometry logic
-
-### Why this matters
-
-Students move from “working notebook code” to **reusable project code**.
-
----
-
-# Suggested Notebook Naming
-
-A clean naming scheme might look like this:
-
-```text
-00-Paths_and_Working_Directories.ipynb
-01-JSON_and_GeoJSON_Basics.ipynb
-02-Viewing_GeoJSON_with_Folium.ipynb
-03-Properties_Styling_and_Filtering.ipynb
-04-Bounding_Boxes_and_Extent.ipynb
-05-Interactive_Maps_with_ipyleaflet.ipynb
-06-Point_in_Polygon.ipynb
-07-Haversine_Distance.ipynb
-08-Bearings_and_Destination_Points.ipynb
-09-LineStrings_and_Trajectories.ipynb
-10-Line_Polygon_Intersections.ipynb
-11-Buffers_and_Zones.ipynb
-12-Installing_the_WDO_Library.ipynb
-13-Refactoring_Into_Reusable_Helpers.ipynb
-```
-
----
-
-# Notes for Students
+# Note to Students
 
 - Each notebook teaches **one new capability**
 - Not every notebook is a full assignment
 - The final project is where these ideas are assembled together
 - You are not expected to memorize everything — you are expected to build and reuse your own notes and examples
-
----
-
-# Notes for Instructor
-
-### Merge candidates
-
-- working directory + data elsewhere
-- styling + filtering + property inspection
-- WDO helper library + installing local library
-
-### Split candidates
-
-- current “lines and distances” content into:
-  - distance notebook
-  - line notebook
-
-### Delay until later
-
-- local package installation
-- refactoring into a mini library
-- class-based notebook cleanup patterns
-
-Those topics are valuable, but they make more sense **after** students see why repetition becomes a problem.
-
----
-
-If you want, next I can turn this into a **more polished markdown file with brief prerequisites and “used later in project milestone X” tags**.
