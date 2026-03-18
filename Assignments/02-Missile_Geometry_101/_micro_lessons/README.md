@@ -8,40 +8,30 @@ This assignment is to just establish where you in the directory tree.
 
 ### 01-Data_Elsewhere
 
+Opening a data file that is not local to your python code. 
+
 ### 02-Viewing_Geojson
+
+
 
 ### 03_Style_W_Logic
 
-### 08-Distance
+### 04-Distance
+
+### 05-Geo_and_Json_overview
+
+### 06-Distances
+
+### 07-InteractiveMaps
+
+### 08-ReFactoring
+
+
+## Helper Module
+
+
 
 #### Geo Math Functions
-
-Look at the file tree below. Inside the `02-Missile_Geometry_101` project folder there are three important folders:
-
-- `_micro_lessons` : practice assignments to help with 
-- `data`
-- `src`
-```
-├── 󰣞 _micro_lessons
-│       ├── 00
-│       ├── 01
-│       ├── 02
-│       ├── 0N
-├── 󰣞 data
-│   └──  threats
-│   └──  world_borders
-├── 󰣞 src
-│   └──  wdo
-│       ├──  __init__.py
-│       ├──  io_shapefile.py
-│       ├──  simulate_threats.py
-│       ├──  threats.json
-│       ├──  viz_map.py
-│       └──  wdo_geo.py
-```
-
-The practice
-
 
 
 
