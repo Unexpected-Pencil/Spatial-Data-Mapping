@@ -1,6 +1,6 @@
-# Railroad Manager — Micro Lesson Roadmap
+# Data Manager — Micro Lesson Roadmap
 
-These micro lessons are designed to build the skills needed for the **Railroad Manager** project one concept at a time. The central problem is a real one: a 40MB world railroad GeoJSON file is far too large to load on every map pan and zoom. These lessons build — from scratch — the tools needed to solve that problem intelligently. A library that solves all of this already exists. We are building the small version first.
+These micro lessons are designed to build the skills needed for the **Data Manager** project one concept at a time. The central problem is a real one: a 40MB world railroad GeoJSON file is far too large to load on every map pan and zoom. These lessons build — from scratch — the tools needed to solve that problem intelligently. A library that solves all of this already exists. We are building the small version first.
 
 The general progression is:
 

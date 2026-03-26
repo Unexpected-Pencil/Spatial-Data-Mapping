@@ -1,4 +1,4 @@
-# Railroad Manager
+# Data Manager
 
 I wanted to do something with an Armageddon theme using a bunch of geojson files when I found myself solving the issue of too much data, and how do I display so much data seamlessly on a map?
 
@@ -143,7 +143,7 @@ Both matter.
 
 ---
 
-# 🚂 Why This Matters for the Railroad Project
+# 🚂 Why This Matters for the Data Project
 
 This project is not about drawing train tracks on a map. It’s about learning how to think like someone who builds systems that deal with real data.
 
