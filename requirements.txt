@@ -12,3 +12,5 @@ rich==14.3.2
 # Notebook support
 ipykernel==7.2.0
 jupyterlab==4.3.5
+ipyleaflet
+
