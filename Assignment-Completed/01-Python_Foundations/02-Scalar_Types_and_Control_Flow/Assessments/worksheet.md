@@ -59,7 +59,7 @@ print(a < b or b < 10)
 
 6. What does `elif` allow you to do?
 
-`Answer:` _______________________
+`Answer:` 
 
 ---
 
