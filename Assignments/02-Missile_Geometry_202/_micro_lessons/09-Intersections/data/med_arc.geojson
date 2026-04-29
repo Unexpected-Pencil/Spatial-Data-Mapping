@@ -1,0 +1,68 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mediterranean Arc",
+        "origin": "Paris",
+        "destination": "Cairo"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            [
+              41.89,
+              12.492
+            ],
+            [
+              48.857,
+              2.352
+            ]
+          ],
+          [
+            [
+              41.89,
+              12.492
+            ],
+            [
+              48.857,
+              2.352
+            ]
+          ],
+          [
+            [
+              41.89,
+              12.492
+            ],
+            [
+              48.857,
+              2.352
+            ]
+          ],
+          [
+            [
+              41.89,
+              12.492
+            ],
+            [
+              48.857,
+              2.352
+            ]
+          ],
+          [
+            [
+              41.89,
+              12.492
+            ],
+            [
+              48.857,
+              2.352
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
