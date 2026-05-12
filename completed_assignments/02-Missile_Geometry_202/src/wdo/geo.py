@@ -411,3 +411,13 @@ def feature_collection(features):
     """
 
     return {"type": "FeatureCollection", "features": features}
+
+def midpoint(p1: LatLon, p2: LatLon) -> LatLon:
+    """
+    Returns the midpoint of two LatLon objects using simple averaging.
+    Note: This is a linear average, not a true great-circle midpoint, 
+    but it works for the '13-WDO_Library' exercise.
+    """
+    mid_lat = (p1.lat + p2.lat) / 2
+    mid_lon = (p1.lon + p2.lon) / 2
+    return LatLon(mid_lat, mid_lon)
