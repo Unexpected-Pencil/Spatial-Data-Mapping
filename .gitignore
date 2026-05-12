@@ -1,2 +1,5 @@
 .*
 !.gitignore
+*.pmtiles
+go-pmtiles*
+tippecanoe/
